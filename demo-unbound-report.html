@@ -1,0 +1,2884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Framework Test Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <div class="flex m-4 rounded-lg p-4">
+        <b class="text-3xl font-bold text-blue-900"></b>
+        <h1 class="text-3xl">UNBOUND REPORT</h1>
+    </div>
+    <div class="bg-gray-100 p-8 rounded-lg shadow-md max-w-full mx-5 mt-8 mb-8">
+
+        <div id="tab-section-1" class="tab-section">
+            <div class="text-center mb-4">
+                <h1 class="text-3xl ">Overview</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-10 mt-8 mb-8 p-4 ">
+                <div class="flex-1 bg-white p-4 rounded-lg text-center">
+                    <div class="text-xl">Suites</div>
+                    <div class="chart-container">
+                        <canvas id="suiteChart" style="height: 40vh; width: 40vh"></canvas>
+                    </div>
+                    <div class="flex flex-wrap mt-4 text-left gap-5 justify-center">
+                        <div class="flex gap-5">
+                            <div class="font-medium">2 Total</div>
+                            <div class="text-green-600 font-medium">1 Passed</div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="text-red-600 font-medium">1 Failed</div>
+                            <div class="text-yellow-600 font-medium">0 Skipped</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 bg-white p-4 rounded-lg text-center">
+                    <div class="text-xl">Tests</div>
+                    <div class="chart-container">
+                        <canvas id="testChart" style="height: 40vh; width: 40vh"></canvas>
+                    </div>
+                    <div class="flex flex-wrap mt-4 text-left gap-5 justify-center">
+                        <div class="flex gap-5">
+                            <div class="font-medium">8 Total</div>
+                            <div class="text-green-600 font-medium">4 Passed</div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="text-red-600 font-medium">2 Failed</div>
+                            <div class="text-yellow-600 font-medium">2 Skipped</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-8 mb-8 bg-white p-4 rounded-lg text-center">
+                <div class="text-xl">Test Outcomes Summary</div>
+                <div class="chart-container">
+                    <canvas id="chartSection2" height="500px"></canvas>
+                </div>
+            </div>
+            <div class="mt-8 mb-8 bg-white p-4 rounded-lg text-center">
+                <div class="text-xl">Trend of Test Results</div>
+                <div class="chart-container">
+                    <canvas id="chartSection3" height="500px"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-section-2" class="tab-section">
+            <div class="text-center mb-4">
+                <h1 class="text-3xl ">Suites</h1>
+            </div>
+            <div id="accordion" class="space-y-4">
+                <!-- Suite 1 -->
+                
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <div class="p-4 flex justify-between items-center cursor-pointer accordion-header">
+                        <span class="flex items-center gap-2">
+                            <span class="text-lg font-semibold">Login Copy</span>
+                            <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">13.481 s</span>
+                        </span>
+                        <span class="flex items-center gap-5">
+                            
+                                <span class="bg-red-500 text-white font-medium rounded py-2 px-4"> FAIL </span>
+                            
+                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content px-4 bg-gray-50"  style="overflow: auto">
+                        <!-- Timeline for Suite 1 -->
+                        <div class="relative" class="flex flex-row">
+                            
+                            <!-- Setup -->
+                            <div class="flex items-center my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fa-sharp-duotone fa-solid fa-gear"></i>
+                                    </div>
+                                    
+
+
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <p>
+                                        <span>Setup </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">4.1 s</span>
+                                    </p>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:39</p>
+                                </div>
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Login </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.67 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:43</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t1" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=id:user-name</span><span class="italic">text=standard_user</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.322 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'standard_user' into text field 'id:user-name'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=id:password</span><span class="italic">text=secret_sauce</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.174 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'secret_sauce' into text field 'id:password'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=id:login-button</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.156 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'id:login-button'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-forward"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Add To Cart </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.16 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:44</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t2" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="add-to-cart-sauce-labs-backpack"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.079 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="add-to-cart-sauce-labs-backpack"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="add-to-cart-sauce-labs-bike-light"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.07 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="add-to-cart-sauce-labs-bike-light"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Keyword 2</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.006 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Log To Console</span>
+                    <span class="italic">A2</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.001 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Logs the given message to the console.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Log To Console</span>
+                    <span class="italic">B2</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.003 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Logs the given message to the console.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Keyword 1</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.002 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Log To Console</span>
+                    <span class="italic">A1</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Logs the given message to the console.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Log To Console</span>
+                    <span class="italic">B2</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Logs the given message to the console.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+            </div>
+        </div>
+        
+    
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    <div
+            class="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center text-white">
+            <i class="fa-solid fa-forward"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Skip</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.001 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Skips the rest of the current test.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Skipped with Skip keyword.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-forward"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Dummy Test 1 </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">1.001 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:44</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t3" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Sleep</span>
+                    <span class="italic">1</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">1.001 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Pauses the test executed for the given time.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Slept 1 second.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Keyword 1</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Log To Console</span>
+                    <span class="italic">A1</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Logs the given message to the console.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Log To Console</span>
+                    <span class="italic">B2</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Logs the given message to the console.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    <div
+            class="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center text-white">
+            <i class="fa-solid fa-forward"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Skip</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Skips the rest of the current test.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Skipped with Skip keyword.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Checkout </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.69 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:45</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t4" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="shopping_cart_container"]/a</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.09 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="checkout"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.077 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="checkout"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="first-name"]</span><span class="italic">text=ABC</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.137 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'ABC' into text field 'xpath://*[@id="first-name"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="last-name"]</span><span class="italic">text=XYZ</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.092 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'XYZ' into text field 'xpath://*[@id="last-name"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="postal-code"]</span><span class="italic">text=101010</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.114 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text '101010' into text field 'xpath://*[@id="postal-code"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="continue"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.101 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="continue"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="finish"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.061 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="finish"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    <div
+            class="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Should Be True</span>
+                    <span class="italic">${False}</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.003 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Fails if the given condition is not true.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>'False' should be true.<br>
+                </div>
+                <div class="flex my-1"><div class="text-white bg-red-500 rounded py-1/2 px-1 mr-2">Error</div>'False' should be true.<br></div>
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Test my For Loop </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.003 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:46</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t5" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>My For Loop</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    <div
+            class="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Should Be True</span>
+                    <span class="italic">${False}</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Fails if the given condition is not true.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>'False' should be true.<br>
+                </div>
+                <div class="flex my-1"><div class="text-white bg-red-500 rounded py-1/2 px-1 mr-2">Error</div>'False' should be true.<br></div>
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+
+                            
+                            <!-- Setup -->
+                            <div class="flex items-center my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fa-sharp-duotone fa-solid fa-gear"></i>
+                                    </div>
+                                    
+
+
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <p>
+                                        <span>Teardown </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">6.436 s</span>
+                                    </p>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:46</p>
+                                </div>
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <div class="p-4 flex justify-between items-center cursor-pointer accordion-header">
+                        <span class="flex items-center gap-2">
+                            <span class="text-lg font-semibold">Login</span>
+                            <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">10.456 s</span>
+                        </span>
+                        <span class="flex items-center gap-5">
+                            
+                                <span class="bg-green-500 text-white font-medium rounded py-2 px-4"> Pass </span>
+                            
+                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content px-4 bg-gray-50"  style="overflow: auto">
+                        <!-- Timeline for Suite 1 -->
+                        <div class="relative" class="flex flex-row">
+                            
+                            <!-- Setup -->
+                            <div class="flex items-center my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fa-sharp-duotone fa-solid fa-gear"></i>
+                                    </div>
+                                    
+
+
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <p>
+                                        <span>Setup </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">2.532 s</span>
+                                    </p>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:52</p>
+                                </div>
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Login </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.565 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:55</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s2-t1" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=id:user-name</span><span class="italic">text=standard_user</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.241 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'standard_user' into text field 'id:user-name'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=id:password</span><span class="italic">text=secret_sauce</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.16 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'secret_sauce' into text field 'id:password'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=id:login-button</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.133 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'id:login-button'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Add To Cart </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.198 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:55</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s2-t2" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="add-to-cart-sauce-labs-backpack"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.092 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="add-to-cart-sauce-labs-backpack"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="add-to-cart-sauce-labs-bike-light"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.083 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="add-to-cart-sauce-labs-bike-light"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            <!-- Test 1 -->
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Checkout </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.785 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:55</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s2-t3" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="shopping_cart_container"]/a</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.26 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="checkout"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.059 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="checkout"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="first-name"]</span><span class="italic">text=ABC</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.116 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'ABC' into text field 'xpath://*[@id="first-name"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="last-name"]</span><span class="italic">text=XYZ</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.106 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'XYZ' into text field 'xpath://*[@id="last-name"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="postal-code"]</span><span class="italic">text=101010</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.105 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text '101010' into text field 'xpath://*[@id="postal-code"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="continue"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.072 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="continue"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="finish"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.063 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="finish"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+
+                            
+                            <!-- Setup -->
+                            <div class="flex items-center my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+                                        <i class="fa-sharp-duotone fa-solid fa-gear"></i>
+                                    </div>
+                                    
+
+
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <p>
+                                        <span>Teardown </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">6.286 s</span>
+                                    </p>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:56</p>
+                                </div>
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+            
+        </div>
+
+        <div id="tab-section-3" class="tab-section">
+            <div class="text-center mb-4">
+                <h1 class="text-3xl ">Defects</h1>
+            </div>
+            <div id="accordion" class="space-y-4">
+                
+                
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <div class="p-4 flex justify-between items-center cursor-pointer accordion-header">
+                        <span class="flex items-center gap-2">
+                            <span class="text-lg font-semibold">Login Copy: "'False' should be true."</span>
+                        </span>
+                        <span class="flex items-center gap-5">
+                            
+                            <span class="bg-red-500 text-white font-medium rounded py-2 px-4"> FAIL </span>
+                            
+                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-content px-4 bg-gray-50">
+                       
+                        <div class="relative" class="flex flex-row">
+                        
+                            
+                            
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Checkout </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.69 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:45</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t4" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="shopping_cart_container"]/a</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.09 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="shopping_cart_container"]/a'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="checkout"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.077 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="checkout"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="first-name"]</span><span class="italic">text=ABC</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.137 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'ABC' into text field 'xpath://*[@id="first-name"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="last-name"]</span><span class="italic">text=XYZ</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.092 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text 'XYZ' into text field 'xpath://*[@id="last-name"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Input Text</span>
+                    <span class="italic">locator=xpath://*[@id="postal-code"]</span><span class="italic">text=101010</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.114 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Types the given ``text`` into the text field identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Typing text '101010' into text field 'xpath://*[@id="postal-code"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="continue"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.101 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="continue"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Click Element</span>
+                    <span class="italic">locator=xpath://*[@id="finish"]</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.061 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Click the element identified by ``locator``.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>Clicking element 'xpath://*[@id="finish"]'.<br>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    <div
+            class="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Should Be True</span>
+                    <span class="italic">${False}</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.003 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Fails if the given condition is not true.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>'False' should be true.<br>
+                </div>
+                <div class="flex my-1"><div class="text-white bg-red-500 rounded py-1/2 px-1 mr-2">Error</div>'False' should be true.<br></div>
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                   
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+                            
+                            <div class="flex items-start my-4">
+                                <div class="w-10">
+                                    
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="ml-4 flex flex-col items-start">
+                                    <div class="flex flex-col items-start cursor-pointer accordion-header">
+                                    <div class="flex gap-1">
+                                        <span>Test my For Loop </span>
+                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0.003 s</span>
+                                        <div class="cursor-pointer">
+                                            <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div> 
+                                    </div>
+                                    <p class="text-gray-500 text-sm">15 Aug 2024, 02:15:46</p>
+                                    
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="flex mb-2 items-center">
+                                            <a href="./log.html#s1-s1-t5" target="_blank">view detailed log <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    
+        <div
+            class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white">
+            <i class="fas fa-check"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>My For Loop</span>
+                    
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    
+                </div>
+                <div class="flex items-start my-1">
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                            
+
+        <div class="flex flex-col">
+            <div class="accordion-header flex">
+                <div class="w-8 h-8">
+                    <div
+            class="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+                </div>
+                <div>
+                    <span>Should Be True</span>
+                    <span class="italic">${False}</span>
+                    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">0 s</span>
+                </div>
+                <div class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500 accordion-icon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content ml-6">
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Doc</div>Fails if the given condition is not true.<br>
+                </div>
+                <div class="flex items-start my-1">
+                    <div class="text-white bg-yellow-300 rounded py-1/2 px-1 mr-2">Message</div>'False' should be true.<br>
+                </div>
+                <div class="flex my-1"><div class="text-white bg-red-500 rounded py-1/2 px-1 mr-2">Error</div>'False' should be true.<br></div>
+                
+                
+            </div>
+        </div>
+        
+    
+                                        
+                                        
+                                    </div>
+                                </div>
+                                   
+                            </div>
+                            <!-- Vertical line -->
+                            <div class="absolute left-4 top-0 h-full border-l-2 border-gray-200"
+                                style="margin-left: 1.25rem;"></div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="tab" class="fixed bottom-0 left-1/2 transform -translate-x-1/2  bg-white shadow-md flex rounded p-2 mb-2">
+        <div class="flex mr-2  rounded">
+            <a id="tab-btn-1"
+                class="tab-btn text-center block border border-white rounded hover:border-gray-200 hover:bg-gray-200 py-2 px-6"
+                href="#" data-tab="1">Overview</a>
+        </div>
+        <div class="flex mr-2 rounded">
+            <a id="tab-btn-2"
+                class="tab-btn text-center block border border-white rounded hover:border-gray-200 hover:bg-gray-200 py-2 px-4"
+                href="#" data-tab="2">Suites</a>
+        </div>
+        <div class="text-center flex rounded">
+            <a id="tab-btn-3"
+                class="tab-btn text-center block border border-white rounded hover:border-gray-200 hover:bg-gray-200 py-2 px-4"
+                href="#" data-tab="3">Defects</a>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var tab_index = 1;
+            $('.tab-btn').on('click', function() {
+                var index = $(this).data('tab');
+                showTab(index);
+            })
+
+            function showTab(index){
+                $('.tab-section').hide();
+                $('#tab-section-'+index).show();
+                $('.tab-btn').removeClass('bg-blue-500 text-white').addClass('hover:bg-gray-200');
+                $('#tab-btn-'+index).addClass('bg-blue-500 text-white').removeClass('hover:bg-gray-200');
+            }
+
+            showTab(1);
+
+            
+            $('.accordion-header').click(function () {
+                const content = $(this).next('.accordion-content');
+                const icon = $(this).find('.accordion-icon');
+
+                // Close other open accordions
+                // $('.accordion-content').not(content).css('max-height', '0').prev().find('.accordion-icon').removeClass('transform rotate-180');
+
+                // Toggle current accordion
+                if (content.css('max-height') !== '0px') {
+                    content.css('max-height', '0');
+                    icon.removeClass('transform rotate-180');
+                } else {
+                    content.css('max-height', $(document).height()*1.5 + 'px');
+                    icon.addClass('transform rotate-180');
+                }
+            });
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Data for the charts (This should come from your Jinja context)
+            const suite_stats = {
+                totalTests: 2,
+                passedTests: 1,
+                failedTests: 1,
+                skippedTests: 0,
+            };
+
+            // Suite Pass/Fail Chart
+            const suiteChart = document.getElementById('suiteChart').getContext('2d');
+            new Chart(suiteChart, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Passed', 'Failed', 'Skipped'],
+                    datasets: [{
+                        data: [suite_stats.passedTests, suite_stats.failedTests, suite_stats.skippedTests],
+                        backgroundColor: ['#10B981', '#EF4444', '#FBBF24'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%'
+                }
+            });
+
+            // Test Pass/Fail Chart
+            const test_stats = {
+                totalTests: 8,
+                passedTests: 4,
+                failedTests: 2,
+                skippedTests: 2,
+            };
+
+            const testChart = document.getElementById('testChart').getContext('2d');
+            new Chart(testChart, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Passed', 'Failed', 'Skipped'],
+                    datasets: [{
+                        data: [test_stats.passedTests, test_stats.failedTests, test_stats.skippedTests],
+                        backgroundColor: ['#10B981', '#EF4444', '#FBBF24'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%'
+                }
+            });
+
+            // Placeholder for other charts
+            const ctx2 = document.getElementById('chartSection2').getContext('2d');
+            new Chart(ctx2, {
+                type: 'bar', // Change as needed
+                data: {
+                    // Sample data
+                    labels: ['Passed', 'Failed', 'Skipped'],
+                    datasets: [
+                    
+                    {
+                        label: 'Login Copy',
+                        data: [1, 2, 2],
+                        backgroundColor: ['#10B981', '#EF4444', '#FBBF24']
+                    },
+                    
+                    {
+                        label: 'Login',
+                        data: [3, 0, 0],
+                        backgroundColor: ['#10B981', '#EF4444', '#FBBF24']
+                    },
+                    
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            const ctx3 = document.getElementById('chartSection3').getContext('2d');
+            new Chart(ctx3, {
+                type: 'line', // Change as needed
+                data: {
+                    // Sample data
+                    labels: [ 'Test 1',   'Test 2',   'Test 3',   'Test 4',   'Test 5',  ],
+                    datasets: [
+                    
+                    {
+                        label: 'Login Copy',
+                        data: [ {
+                            x: 'Test 1',
+                            y: 0.67,
+                            test_name: 'Login',
+                            status: 'PASS'
+                        },   {
+                            x: 'Test 2',
+                            y: 0.16,
+                            test_name: 'Add To Cart',
+                            status: 'SKIP'
+                        },   {
+                            x: 'Test 3',
+                            y: 1.001,
+                            test_name: 'Dummy Test 1',
+                            status: 'SKIP'
+                        },   {
+                            x: 'Test 4',
+                            y: 0.69,
+                            test_name: 'Checkout',
+                            status: 'FAIL'
+                        },   {
+                            x: 'Test 5',
+                            y: 0.003,
+                            test_name: 'Test my For Loop',
+                            status: 'FAIL'
+                        } ],
+                        backgroundColor: ['rgba(59, 130, 246, 0.5)'],
+                        borderColor: ['#3B82F6'],
+                        fill: false
+                    },
+                    
+                    {
+                        label: 'Login',
+                        data: [ {
+                            x: 'Test 1',
+                            y: 0.565,
+                            test_name: 'Login',
+                            status: 'PASS'
+                        },   {
+                            x: 'Test 2',
+                            y: 0.198,
+                            test_name: 'Add To Cart',
+                            status: 'PASS'
+                        },   {
+                            x: 'Test 3',
+                            y: 0.785,
+                            test_name: 'Checkout',
+                            status: 'PASS'
+                        } ],
+                        backgroundColor: ['rgba(59, 130, 246, 0.5)'],
+                        borderColor: ['#3B82F6'],
+                        fill: false
+                    },
+                    
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'category',
+                            labels: [ 'Test 1',   'Test 2',   'Test 3',   'Test 4',   'Test 5',  ]
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    var pointData = tooltipItem.raw;
+                                    return pointData.test_name + ': ' + pointData.y + ' ms (' + pointData.status + ')';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
