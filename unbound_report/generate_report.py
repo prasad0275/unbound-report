@@ -102,10 +102,10 @@ def generate_report(output_file, log_file, save_path):
 def main():
         
     parser = argparse.ArgumentParser(description="Process Robot Framework output.xml and save the result.")
-    parser.add_argument("-v", "--version", action='version', version='unbound report '+__version__, help="Version")
-    parser.add_argument("-o", "--output", required=False, help="Path to the input output.xml file")
-    parser.add_argument("-l", "--log", required=False, help="Path to the input log.html file")
-    parser.add_argument("-s", "--save-path", required=False, help="Path to save the processed file")
+    parser.add_argument("-v", "--version", action='version', version='unbound report '+__version__, help="show version")
+    parser.add_argument("-o", "--output", required=False, help="path to the input output.xml file")
+    parser.add_argument("-l", "--log", required=False, help="path to the input log.html file")
+    parser.add_argument("-s", "--save-path", required=False, help="path to save the processed file")
 
     args = parser.parse_args()
     

@@ -22,15 +22,26 @@ class SuiteDataExtractor(ResultVisitor):
         }
         
     def visit_result(self, result):
-        for suite in result.suite.suites:
-            suite.visit(self)
+
+        if result.suite.suites:
+            for suite in result.suite.suites:
+                suite.visit(self)
+            self.suite_stats = {
+                'total': len(result.suite.suites),
+                'passed': len([suite for suite in result.suite.suites if suite.passed]),
+                'failed': len([suite for suite in result.suite.suites if suite.failed]),
+                'skipped': len([suite for suite in result.suite.suites if suite.skipped])
+            }
+        else:
+            result.suite.visit(self)
+            
+            self.suite_stats = {
+                'total': 1 if result.suite else 0,
+                'passed': 1 if result.suite.passed else 0,
+                'failed': 1 if result.suite.failed else 0,
+                'skipped': 1 if result.suite.skipped else 0
+            }
         
-        self.suite_stats = {
-            'total': len(result.suite.suites),
-            'passed': len([suite for suite in result.suite.suites if suite.passed]),
-            'failed': len([suite for suite in result.suite.suites if suite.failed]),
-            'skipped': len([suite for suite in result.suite.suites if suite.skipped])
-        }
         
         result.statistics.visit(self)
         

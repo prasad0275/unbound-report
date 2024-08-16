@@ -5,7 +5,7 @@ readme = (Path(__file__).parent / "README.md").read_text()
 
 setup(
     name="unbound-report",
-    version="1.0.0",  
+    version="1.0.1",  
     author="Prasad Sawant",  
     author_email="sawant.prasad0275@gmail.com",  
     description="A tool to extract test suite data from Robot Framework output.xml and generate HTML reports.",

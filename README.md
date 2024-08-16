@@ -7,8 +7,8 @@ Unbound Report is a powerful tool designed to extract and visualize test suite d
 * Command-Line Interface and Module Import: Flexibility to generate reports using a simple command-line interface or by importing the module into your own scripts.
 
 ## Report Structure
-The generated Unbound Report consists of three main sections:
-
+The generated Unbound Report consists of three main sections:  
+View Report : [Unbound Report](https://prasad0275.github.io/unbound-report/demo-unbound-report.html)
 ### Overview Section:
 Provides graphical representations of test execution statistics, including pass/fail rates, duration, and other key metrics.
 Helps in understanding the overall performance and health of the test execution at a glance.
